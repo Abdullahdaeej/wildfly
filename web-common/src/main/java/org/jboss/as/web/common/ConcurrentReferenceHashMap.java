@@ -251,7 +251,8 @@ final class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V>
      * that otherwise encounter collisions for hashCodes that do not
      * differ in lower or upper bits.
      */
-    private static int hash(int h) {
+   /* Aldaeej test */
+     private static int hash(int h) {
         // Spread bits to regularize both segment and index locations,
         // using variant of single-word Wang/Jenkins hash.
         h += (h <<  15) ^ 0xffffcd7d;
